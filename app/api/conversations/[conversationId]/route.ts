@@ -40,6 +40,11 @@ export async function DELETE(
       return new NextResponse("Not Found", { status: 404 });
     }
 
+    // 先删除与该会话相关的所有消息
+    await prisma.message.deleteMany({
+      where: { conversationId: conversationId },
+    });
+
     const deletedConversation = await prisma.conversation.deleteMany({
       where: {
         id: conversationId,
