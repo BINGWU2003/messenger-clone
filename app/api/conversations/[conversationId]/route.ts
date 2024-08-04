@@ -8,7 +8,7 @@ interface IParams {
 }
 
 export default async function DELETE(
-  req: Request,
+  // req: Request,
   {
     params,
   }: {
