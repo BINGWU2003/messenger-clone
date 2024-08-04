@@ -84,7 +84,7 @@ const SettingsModal: FC<SettingsModalProps> = ({ isOpen, onClose, currentUser })
                       maxFiles: 1,
                     }}
                     onUpload={handleUpload}
-                    uploadPreset="weopayd7"
+                    uploadPreset="rlbfaa7z"
                   >
                     <Button disabled={isLoading} secondary type="button">
                       Change

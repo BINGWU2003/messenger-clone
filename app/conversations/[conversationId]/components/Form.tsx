@@ -1,3 +1,12 @@
+/*
+ * @Author: BINGWU
+ * @Date: 2024-08-04 00:05:01
+ * @LastEditors: hujiacheng hujiacheng@iipcloud.com
+ * @LastEditTime: 2024-08-04 03:12:43
+ * @FilePath: \messenger-clone\app\conversations\[conversationId]\components\Form.tsx
+ * @Describe: 
+ * @Mark: ૮(˶ᵔ ᵕ ᵔ˶)ა
+ */
 "use client";
 
 import useConversation from "@/app/hooks/useConversation";
@@ -44,7 +53,7 @@ const Form = () => {
           maxFiles: 1,
         }}
         onUpload={handleUpload}
-        uploadPreset="weopayd7"
+        uploadPreset="rlbfaa7z"
       >
         <HiPhoto size={30} className="text-sky-500" />
       </CldUploadButton>

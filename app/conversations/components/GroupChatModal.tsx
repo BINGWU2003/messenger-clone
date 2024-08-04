@@ -1,3 +1,12 @@
+/*
+ * @Author: BINGWU
+ * @Date: 2024-08-04 00:05:01
+ * @LastEditors: hujiacheng hujiacheng@iipcloud.com
+ * @LastEditTime: 2024-08-04 23:25:34
+ * @FilePath: \messenger-clone\app\conversations\components\GroupChatModal.tsx
+ * @Describe: 
+ * @Mark: ૮(˶ᵔ ᵕ ᵔ˶)ა
+ */
 "use client";
 
 import Button from "@/app/components/Button";
@@ -49,7 +58,9 @@ const GroupChatModal: FC<GroupChatModalProps> = ({ isOpen, onClose, users }) => 
         onClose();
         toast.success("Group created");
       })
-      .catch(() => {
+      .catch((e) => {
+        console.log(e);
+        
         toast.error("Something went wrong");
       })
       .finally(() => setIsLoading(false));
