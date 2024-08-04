@@ -7,8 +7,8 @@ interface IParams {
   conversationId?: string;
 }
 
-export default async function DELETE(
-  // req: Request,
+export async function DELETE(
+  req: Request,
   {
     params,
   }: {
